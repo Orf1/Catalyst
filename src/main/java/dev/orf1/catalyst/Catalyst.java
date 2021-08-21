@@ -105,7 +105,6 @@ public class Catalyst {
             double yMax = 0.8;
             int nPointsPerAxis = 100;
 
-            //Generate x,y points that span the whole range of features
             INDArray allXYPoints = PlotUtil.generatePointsOnGraph(xMin, xMax, yMin, yMax, nPointsPerAxis);
             //Get train data and plot with predictions
             PlotUtil.plotTrainingData(model, trainIter, allXYPoints, nPointsPerAxis);
